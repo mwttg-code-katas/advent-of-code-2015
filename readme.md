@@ -11,7 +11,7 @@
 
 |       Day       | Puzzle 1 | Puzzle 2 |
 |:---------------:|:--------:|:--------:|
-| [Day 01][day01] |    ms    |    ms    |
+| [Day 01][day01] | 10-20 ms |    ms    |
 | [Day 02][day02] |    ms    |    ms    |
 
 [comment]: # "List of URLs down below, sorted alphabetically DESC by tag"
