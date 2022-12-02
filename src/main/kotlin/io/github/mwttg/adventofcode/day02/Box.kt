@@ -9,6 +9,13 @@ data class Box(val length: Int, val width: Int, val height: Int) {
 
     fun getTotal() = getSurfaceArea() + getSmallest()
 
+    fun getTotalRibbon(): Int {
+        val sidesBySize = arrayOf(length, width, height).sortedArray()
+        val ribbon = sidesBySize[0] + sidesBySize[0] + sidesBySize[1] + sidesBySize[1]
+        val bow = length * width * height
+        return ribbon + bow
+    }
+
     companion object {
 
         fun createFrom(input: String): Box {

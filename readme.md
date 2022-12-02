@@ -12,7 +12,7 @@
 |       Day       | Puzzle 1 | Puzzle 2 |
 |:---------------:|:--------:|:--------:|
 | [Day 01][day01] | 10-20 ms | 10-15 ms |
-| [Day 02][day02] | 70-90 ms |    ms    |
+| [Day 02][day02] | 70-90 ms | 75-95 ms |
 
 [comment]: # "List of URLs down below, sorted alphabetically DESC by tag"
 [advent-of-code]: https://adventofcode.com/2015/
