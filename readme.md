@@ -15,7 +15,7 @@
 | [Day 02][day02] | 70-90 ms | 75-95 ms |
 | [Day 03][day03] | 25-35 ms | 50-65 ms |
 | [Day 04][day04] |  3 sec   |  77 sec  |
-| [Day 05][day05] | 60-75 ms |          |
+| [Day 05][day05] | 60-75 ms | 60-80 ms |
 
 [comment]: # "List of URLs down below, sorted alphabetically DESC by tag"
 [advent-of-code]: https://adventofcode.com/2015/

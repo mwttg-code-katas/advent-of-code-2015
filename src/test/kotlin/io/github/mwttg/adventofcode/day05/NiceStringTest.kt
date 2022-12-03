@@ -1,7 +1,9 @@
 package io.github.mwttg.adventofcode.day05
 
 import io.github.mwttg.adventofcode.day05.NiceString.Companion.hasDoubleLetterInRow
+import io.github.mwttg.adventofcode.day05.NiceString.Companion.hasDoublePair
 import io.github.mwttg.adventofcode.day05.NiceString.Companion.hasNoBlacklistedItem
+import io.github.mwttg.adventofcode.day05.NiceString.Companion.hasRepeatedLetterWithOneCharSpace
 import io.github.mwttg.adventofcode.day05.NiceString.Companion.hasThreeVowels
 import org.junit.jupiter.api.Test
 import strikt.api.expectThat
@@ -31,5 +33,20 @@ internal class NiceStringTest {
         expectThat("efghiabjklm".hasNoBlacklistedItem()).isFalse()
         expectThat("efghixyjklm".hasNoBlacklistedItem()).isFalse()
         expectThat("efghipqjklm".hasNoBlacklistedItem()).isFalse()
+    }
+
+    @Test
+    fun `has repeated letter with one char space`() {
+        expectThat("afa".hasRepeatedLetterWithOneCharSpace()).isTrue()
+        expectThat("aaa".hasRepeatedLetterWithOneCharSpace()).isTrue()
+        expectThat("abcdefgwhwijklm".hasRepeatedLetterWithOneCharSpace()).isTrue()
+        expectThat("aab".hasRepeatedLetterWithOneCharSpace()).isFalse()
+    }
+
+    @Test
+    fun `has double pair`() {
+        expectThat("xyxy".hasDoublePair()).isTrue()
+        expectThat("aabcdefgaa".hasDoublePair()).isTrue()
+        expectThat("aaa".hasDoublePair()).isFalse()
     }
 }
